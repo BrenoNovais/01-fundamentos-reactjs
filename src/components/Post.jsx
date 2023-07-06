@@ -1,4 +1,5 @@
 import styles from './Post.module.css'
+
 export function Post() {
     return (
         <article className={styles.post}>
@@ -17,10 +18,24 @@ export function Post() {
             <div className={styles.content}>
                 <p>
                     <p>Esse é um texto gerado automaticamente, ou não!</p>
-                    <p> <a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam autem nisi quis tenetur porro beatae, earum doloribus. Maiores blanditiis est, voluptatibus!</a></p>
-                    <p> <a href="">#lol #js</a></p>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam autem nisi quis tenetur porro beatae, earum doloribus. Maiores blanditiis est, voluptatibus!</p>
+                    <p> <a href="">Alguma coisa</a></p>
+                    <p> <a href="">#lol</a></p>
+                    <p> <a href="">#js</a></p>
+                    <p> <a href="">#peace</a></p>
                 </p>
             </div>
+
+            <form className={styles.commentForm}>
+                <strong>Deixe seu feedback</strong>
+
+                <textarea
+                    placeholder='Deixe um comentário'
+                />
+
+                <button type='submit'>Publicar</button>
+
+            </form>
         </article>
     )
 }
