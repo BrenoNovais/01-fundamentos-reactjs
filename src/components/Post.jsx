@@ -1,16 +1,18 @@
 import { Comment } from './Comment'
-import styles from './Post.module.css'
 import { Avatar } from './Avatar'
 
-export function Post() {
+import styles from './Post.module.css'
+
+export function Post(props) {
+    console.log(props)
     return (
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <Avatar hasBorder={false} src="https://avatars.githubusercontent.com/u/5530645?v=4" alt="" />
+                    <Avatar hasBorder={false} src="" alt="" />
                     <div className={styles.authorInfo}>
-                        <strong>Breno Novais</strong>
-                        <span>Full Developer</span>
+                        <strong></strong>
+                        <span></span>
                     </div>
                 </div>
 
@@ -19,9 +21,9 @@ export function Post() {
 
             <div className={styles.content}>
                 <p>
-                    <p>Esse é um texto gerado automaticamente, ou não!</p>
-                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam autem nisi quis tenetur porro beatae, earum doloribus. Maiores blanditiis est, voluptatibus!</p>
-                    <p> <a href="">Alguma coisa</a></p>
+                    <p></p>
+                    <p></p>
+                    <p> <a href=""></a></p>
                     <p> <a href="">#lol</a></p>
                     <p> <a href="">#js</a></p>
                     <p> <a href="">#peace</a></p>
