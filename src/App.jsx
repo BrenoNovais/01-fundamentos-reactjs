@@ -22,9 +22,9 @@ const posts = [
   {
     id: 2,
     author: {
-      avatarUrl: 'https://avatars.githubusercontent.com/u/5530645?v=4',
-      name: 'Breno Novais',
-      role: 'Full Developer'
+      avatarUrl: 'https://avatars.githubusercontent.com/u/553561?v=4',
+      name: 'Novais Breno ',
+      role: ' Developer Full'
     },
     content: [
       { type: 'paragraph', content: 'Esse é um texto gerado automaticamente, ou não!' },
