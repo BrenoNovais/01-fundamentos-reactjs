@@ -7,13 +7,14 @@ import { useState } from 'react'
 export function Comment({ content, onDeleteComment }) {
     const [likeCount, setLikeCount] = useState(0)
 
-    function handleDeleteComment(){
+    function handleDeleteComment() {
         onDeleteComment(content)
     }
-    
-    function handleLikeComment(){
 
-        setLikeCount(likeCount + 1)
+    function handleLikeComment() {
+        setLikeCount((state) => {
+            return state + 1
+        })
     }
 
     return (
