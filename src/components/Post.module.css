@@ -1,10 +1,10 @@
 .post {
-    background:  var(--gray-800);
+    background: var(--gray-800);
     border-radius: 8px;
     padding: 2.5rem;
 }
 
-.post + .post {
+.post+.post {
     margin-top: 2rem;
 }
 
@@ -28,19 +28,19 @@
     color: var(--green-300);
 }
 
-.post > header {
-    display:  flex;
+.post>header {
+    display: flex;
     align-items: center;
-    justify-content:  space-between;
+    justify-content: space-between;
 }
 
-.post > header time {
+.post>header time {
     font-size: 0.875rem;
     color: var(--gray-400);
 }
 
 .author {
-    display:  flex;
+    display: flex;
     align-items: center;
     gap: 1rem;
 }
@@ -51,7 +51,7 @@
     line-height: 1.6;
 }
 
-.authorInfo  span {
+.authorInfo span {
     display: block;
     font-size: 0.875rem;
     color: var(--gray-400);
@@ -65,9 +65,9 @@
     border-top: 1px solid var(--gray-600);
 }
 
-.commentForm > strong {
-   line-height: 1.6;
-   color: var(--gray-100); 
+.commentForm>strong {
+    line-height: 1.6;
+    color: var(--gray-100);
 }
 
 .commentForm textarea {
@@ -94,7 +94,7 @@
 
 }
 
-.commentForm button[type=submit]{
+.commentForm button[type=submit] {
     padding: 1rem 1.5rem;
     margin-top: 1rem;
     border-radius: 8px;
@@ -107,8 +107,13 @@
     transition: background-color 0.1s;
 }
 
-.commentForm button[type=submit]:hover {
-   background: var(--green-300); 
+.commentForm button[type=submit]:not(:disabled):hover {
+    background: var(--green-300);
+}
+
+.commentForm button[type=submit]:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
 }
 
 .commentList {
